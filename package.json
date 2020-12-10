@@ -1,0 +1,16 @@
+{
+  "name": "unit-protocol-token",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ tonyprp/unit-protocol-token",
+    "create-local": "graph create --node http://localhost:8020/ tonyprp/unit-protocol-token",
+    "remove-local": "graph remove --node http://localhost:8020/ tonyprp/unit-protocol-token",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 tonyprp/unit-protocol-token"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}
